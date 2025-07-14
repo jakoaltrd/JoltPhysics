@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_826671fa93b9858a6abc1b7a0f3c30a5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <h3 align="center" style="font-size:20px"><b>纽约市地图 - New York City Map</b></h3>
+    
+    
+            <div class="folium-map" id="map_826671fa93b9858a6abc1b7a0f3c30a5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_826671fa93b9858a6abc1b7a0f3c30a5 = L.map(
+                "map_826671fa93b9858a6abc1b7a0f3c30a5",
+                {
+                    center: [40.7589, -73.9851],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5016a7eec0687628f78348d19c27e2b7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5016a7eec0687628f78348d19c27e2b7.addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var marker_e4df85f1e10b6f22e8745ea3092f2bd8 = L.marker(
+                [40.7589, -73.9851],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_bb5df556a941b1208ec80d2359ee9361 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ec0b436cdd822914f85429e8c7cbc03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_251d783dc60ccb3fcdfc843bb4fe3c68 = $(`<div id="html_251d783dc60ccb3fcdfc843bb4fe3c68" style="width: 100.0%; height: 100.0%;">时代广场 Times Square</div>`)[0];
+                popup_0ec0b436cdd822914f85429e8c7cbc03.setContent(html_251d783dc60ccb3fcdfc843bb4fe3c68);
+            
+        
+
+        marker_e4df85f1e10b6f22e8745ea3092f2bd8.bindPopup(popup_0ec0b436cdd822914f85429e8c7cbc03)
+        ;
+
+        
+    
+    
+            marker_e4df85f1e10b6f22e8745ea3092f2bd8.bindTooltip(
+                `<div>
+                     时代广场 Times Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4df85f1e10b6f22e8745ea3092f2bd8.setIcon(icon_bb5df556a941b1208ec80d2359ee9361);
+            
+    
+            var marker_35b762050914a0230a6fcc6d2741d4ff = L.marker(
+                [40.7829, -73.9654],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_a0ea0fdc841d8dd61096110c074be9d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55722226da00eb93961662124a1bd2e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12419cdce9c68a2e51ccedce31f8cbf4 = $(`<div id="html_12419cdce9c68a2e51ccedce31f8cbf4" style="width: 100.0%; height: 100.0%;">中央公园 Central Park</div>`)[0];
+                popup_55722226da00eb93961662124a1bd2e7.setContent(html_12419cdce9c68a2e51ccedce31f8cbf4);
+            
+        
+
+        marker_35b762050914a0230a6fcc6d2741d4ff.bindPopup(popup_55722226da00eb93961662124a1bd2e7)
+        ;
+
+        
+    
+    
+            marker_35b762050914a0230a6fcc6d2741d4ff.bindTooltip(
+                `<div>
+                     中央公园 Central Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35b762050914a0230a6fcc6d2741d4ff.setIcon(icon_a0ea0fdc841d8dd61096110c074be9d3);
+            
+    
+            var marker_12818441f1cad08b9effb23993ddfb29 = L.marker(
+                [40.7484, -73.9857],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_314c16a38048663fa5f3f7805027ac15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac5c9902860e49dd0c93f79936f8ce66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab0a75efdb5a9e74f75b4522919e042e = $(`<div id="html_ab0a75efdb5a9e74f75b4522919e042e" style="width: 100.0%; height: 100.0%;">帝国大厦 Empire State Building</div>`)[0];
+                popup_ac5c9902860e49dd0c93f79936f8ce66.setContent(html_ab0a75efdb5a9e74f75b4522919e042e);
+            
+        
+
+        marker_12818441f1cad08b9effb23993ddfb29.bindPopup(popup_ac5c9902860e49dd0c93f79936f8ce66)
+        ;
+
+        
+    
+    
+            marker_12818441f1cad08b9effb23993ddfb29.bindTooltip(
+                `<div>
+                     帝国大厦 Empire State Building
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12818441f1cad08b9effb23993ddfb29.setIcon(icon_314c16a38048663fa5f3f7805027ac15);
+            
+    
+            var marker_78f3e361d9d3a096e116613373bb250e = L.marker(
+                [40.6892, -74.0445],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_0ae9b2181bbcaa82032991f21de0d047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43567c85d61c938abc6efc11313cd854 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1fa459e1afce5c860affce792f73cb2 = $(`<div id="html_f1fa459e1afce5c860affce792f73cb2" style="width: 100.0%; height: 100.0%;">自由女神像 Statue of Liberty</div>`)[0];
+                popup_43567c85d61c938abc6efc11313cd854.setContent(html_f1fa459e1afce5c860affce792f73cb2);
+            
+        
+
+        marker_78f3e361d9d3a096e116613373bb250e.bindPopup(popup_43567c85d61c938abc6efc11313cd854)
+        ;
+
+        
+    
+    
+            marker_78f3e361d9d3a096e116613373bb250e.bindTooltip(
+                `<div>
+                     自由女神像 Statue of Liberty
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78f3e361d9d3a096e116613373bb250e.setIcon(icon_0ae9b2181bbcaa82032991f21de0d047);
+            
+    
+            var marker_ea1f7060bf0cc594ac2a21cf9f6f67ca = L.marker(
+                [40.7061, -73.9969],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_212854e7ca0ee1aa388432577bc95abc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9100847791ccce889f7d9472d9139313 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ac24bed8fbfdc1e1a6ffe4856ab7913 = $(`<div id="html_0ac24bed8fbfdc1e1a6ffe4856ab7913" style="width: 100.0%; height: 100.0%;">布鲁克林大桥 Brooklyn Bridge</div>`)[0];
+                popup_9100847791ccce889f7d9472d9139313.setContent(html_0ac24bed8fbfdc1e1a6ffe4856ab7913);
+            
+        
+
+        marker_ea1f7060bf0cc594ac2a21cf9f6f67ca.bindPopup(popup_9100847791ccce889f7d9472d9139313)
+        ;
+
+        
+    
+    
+            marker_ea1f7060bf0cc594ac2a21cf9f6f67ca.bindTooltip(
+                `<div>
+                     布鲁克林大桥 Brooklyn Bridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea1f7060bf0cc594ac2a21cf9f6f67ca.setIcon(icon_212854e7ca0ee1aa388432577bc95abc);
+            
+    
+            var marker_efc8f6d43fd5fad03839d7ad73bfa754 = L.marker(
+                [40.7074, -74.0113],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_aed3be26e88ad4b50a9c770435edd1f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a1f1589c47dd90055986c4ba88acaa1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed83f3d1085a118a3303b9d657b0104 = $(`<div id="html_0ed83f3d1085a118a3303b9d657b0104" style="width: 100.0%; height: 100.0%;">华尔街 Wall Street</div>`)[0];
+                popup_5a1f1589c47dd90055986c4ba88acaa1.setContent(html_0ed83f3d1085a118a3303b9d657b0104);
+            
+        
+
+        marker_efc8f6d43fd5fad03839d7ad73bfa754.bindPopup(popup_5a1f1589c47dd90055986c4ba88acaa1)
+        ;
+
+        
+    
+    
+            marker_efc8f6d43fd5fad03839d7ad73bfa754.bindTooltip(
+                `<div>
+                     华尔街 Wall Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efc8f6d43fd5fad03839d7ad73bfa754.setIcon(icon_aed3be26e88ad4b50a9c770435edd1f1);
+            
+    
+            var marker_50e5cdff2e53d10d5056f6cc36eaa477 = L.marker(
+                [40.7489, -73.968],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_ce1cf7b476bfd2838f4699045bf29a12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fafdffa1d8817d46e4e28aeb80b99e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9636e8223a1916eb79dd24e4f175ad69 = $(`<div id="html_9636e8223a1916eb79dd24e4f175ad69" style="width: 100.0%; height: 100.0%;">联合国总部 UN Headquarters</div>`)[0];
+                popup_7fafdffa1d8817d46e4e28aeb80b99e3.setContent(html_9636e8223a1916eb79dd24e4f175ad69);
+            
+        
+
+        marker_50e5cdff2e53d10d5056f6cc36eaa477.bindPopup(popup_7fafdffa1d8817d46e4e28aeb80b99e3)
+        ;
+
+        
+    
+    
+            marker_50e5cdff2e53d10d5056f6cc36eaa477.bindTooltip(
+                `<div>
+                     联合国总部 UN Headquarters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50e5cdff2e53d10d5056f6cc36eaa477.setIcon(icon_ce1cf7b476bfd2838f4699045bf29a12);
+            
+    
+            var marker_f8594f0e0bb8ae522663b84b24e2fd1e = L.marker(
+                [40.8296, -73.9262],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_069f42b762985fa2fb94a4d32a4a69ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39d0c87ffdd60cf8ffa9a3d5dec488c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddd285e8d2ad480f855f030a6853bdd3 = $(`<div id="html_ddd285e8d2ad480f855f030a6853bdd3" style="width: 100.0%; height: 100.0%;">洋基体育场 Yankee Stadium</div>`)[0];
+                popup_39d0c87ffdd60cf8ffa9a3d5dec488c7.setContent(html_ddd285e8d2ad480f855f030a6853bdd3);
+            
+        
+
+        marker_f8594f0e0bb8ae522663b84b24e2fd1e.bindPopup(popup_39d0c87ffdd60cf8ffa9a3d5dec488c7)
+        ;
+
+        
+    
+    
+            marker_f8594f0e0bb8ae522663b84b24e2fd1e.bindTooltip(
+                `<div>
+                     洋基体育场 Yankee Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8594f0e0bb8ae522663b84b24e2fd1e.setIcon(icon_069f42b762985fa2fb94a4d32a4a69ba);
+            
+    
+            var marker_01ff2a7ff969eaf7c3b74d6f92186038 = L.marker(
+                [40.7794, -73.9632],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_dd0bec7012161601022a045bf21a44d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fea85b9fd8f0d5a38eee5f9ee3418f01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eef8417ca9e8f135b2266faca2a26ffe = $(`<div id="html_eef8417ca9e8f135b2266faca2a26ffe" style="width: 100.0%; height: 100.0%;">大都会艺术博物馆 Metropolitan Museum</div>`)[0];
+                popup_fea85b9fd8f0d5a38eee5f9ee3418f01.setContent(html_eef8417ca9e8f135b2266faca2a26ffe);
+            
+        
+
+        marker_01ff2a7ff969eaf7c3b74d6f92186038.bindPopup(popup_fea85b9fd8f0d5a38eee5f9ee3418f01)
+        ;
+
+        
+    
+    
+            marker_01ff2a7ff969eaf7c3b74d6f92186038.bindTooltip(
+                `<div>
+                     大都会艺术博物馆 Metropolitan Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01ff2a7ff969eaf7c3b74d6f92186038.setIcon(icon_dd0bec7012161601022a045bf21a44d7);
+            
+    
+            var marker_e3f49bee1b25dc15a4f91e6023f5b9b1 = L.marker(
+                [40.7115, -74.0134],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_bcc5b59ac06b47c79be79f3264455cc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97f1a9aa81c08109fb0d408272a4c085 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df622e9de4e87fe831bc5ab29047f63c = $(`<div id="html_df622e9de4e87fe831bc5ab29047f63c" style="width: 100.0%; height: 100.0%;">9/11纪念馆 9/11 Memorial</div>`)[0];
+                popup_97f1a9aa81c08109fb0d408272a4c085.setContent(html_df622e9de4e87fe831bc5ab29047f63c);
+            
+        
+
+        marker_e3f49bee1b25dc15a4f91e6023f5b9b1.bindPopup(popup_97f1a9aa81c08109fb0d408272a4c085)
+        ;
+
+        
+    
+    
+            marker_e3f49bee1b25dc15a4f91e6023f5b9b1.bindTooltip(
+                `<div>
+                     9/11纪念馆 9/11 Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3f49bee1b25dc15a4f91e6023f5b9b1.setIcon(icon_bcc5b59ac06b47c79be79f3264455cc1);
+            
+    
+            var marker_68200899eae37b05906bc2fae748dadc = L.marker(
+                [40.7831, -73.9712],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_bd85e63de2837d18213ea8d528323adc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f7c395c28586d61997d1980df6eb8b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05bf147f674f25e723747630d5fcb414 = $(`<div id="html_05bf147f674f25e723747630d5fcb414" style="width: 100.0%; height: 100.0%;">曼哈顿 Manhattan</div>`)[0];
+                popup_6f7c395c28586d61997d1980df6eb8b4.setContent(html_05bf147f674f25e723747630d5fcb414);
+            
+        
+
+        marker_68200899eae37b05906bc2fae748dadc.bindPopup(popup_6f7c395c28586d61997d1980df6eb8b4)
+        ;
+
+        
+    
+    
+            marker_68200899eae37b05906bc2fae748dadc.bindTooltip(
+                `<div>
+                     曼哈顿 Manhattan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68200899eae37b05906bc2fae748dadc.setIcon(icon_bd85e63de2837d18213ea8d528323adc);
+            
+    
+            var marker_e015630ff5097801ae4a34a2208ce7b2 = L.marker(
+                [40.6782, -73.9442],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_9744ac5806f6a63ff74d6c180027f0ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_089a0e6bea0ed89acfe0ae61a0e677ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e6cfaafa99b653a7c078699b104ce09 = $(`<div id="html_3e6cfaafa99b653a7c078699b104ce09" style="width: 100.0%; height: 100.0%;">布鲁克林 Brooklyn</div>`)[0];
+                popup_089a0e6bea0ed89acfe0ae61a0e677ae.setContent(html_3e6cfaafa99b653a7c078699b104ce09);
+            
+        
+
+        marker_e015630ff5097801ae4a34a2208ce7b2.bindPopup(popup_089a0e6bea0ed89acfe0ae61a0e677ae)
+        ;
+
+        
+    
+    
+            marker_e015630ff5097801ae4a34a2208ce7b2.bindTooltip(
+                `<div>
+                     布鲁克林 Brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e015630ff5097801ae4a34a2208ce7b2.setIcon(icon_9744ac5806f6a63ff74d6c180027f0ca);
+            
+    
+            var marker_6042d299e8aa9f3233c122aa46ed7c0c = L.marker(
+                [40.7282, -73.7949],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_8f3c2a2f11abb6713da0d48be7bdf2d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fe02fb0363eaa38fe49c47a074dbbdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_daa8da9ebea00d48df9775f9a31120f6 = $(`<div id="html_daa8da9ebea00d48df9775f9a31120f6" style="width: 100.0%; height: 100.0%;">皇后区 Queens</div>`)[0];
+                popup_4fe02fb0363eaa38fe49c47a074dbbdb.setContent(html_daa8da9ebea00d48df9775f9a31120f6);
+            
+        
+
+        marker_6042d299e8aa9f3233c122aa46ed7c0c.bindPopup(popup_4fe02fb0363eaa38fe49c47a074dbbdb)
+        ;
+
+        
+    
+    
+            marker_6042d299e8aa9f3233c122aa46ed7c0c.bindTooltip(
+                `<div>
+                     皇后区 Queens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6042d299e8aa9f3233c122aa46ed7c0c.setIcon(icon_8f3c2a2f11abb6713da0d48be7bdf2d4);
+            
+    
+            var marker_e1b983fc7e20c5c440238cc44bf398db = L.marker(
+                [40.8448, -73.8648],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_c4f377f8216dbccab37ce733f25897c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77bc2dfaa991de3d790e57bd2fba860a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22cc1dec99d403cc589016103d266943 = $(`<div id="html_22cc1dec99d403cc589016103d266943" style="width: 100.0%; height: 100.0%;">布朗克斯 Bronx</div>`)[0];
+                popup_77bc2dfaa991de3d790e57bd2fba860a.setContent(html_22cc1dec99d403cc589016103d266943);
+            
+        
+
+        marker_e1b983fc7e20c5c440238cc44bf398db.bindPopup(popup_77bc2dfaa991de3d790e57bd2fba860a)
+        ;
+
+        
+    
+    
+            marker_e1b983fc7e20c5c440238cc44bf398db.bindTooltip(
+                `<div>
+                     布朗克斯 Bronx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1b983fc7e20c5c440238cc44bf398db.setIcon(icon_c4f377f8216dbccab37ce733f25897c0);
+            
+    
+            var marker_7bf591bfd7e6f8ce37e7390ceafef581 = L.marker(
+                [40.5795, -74.1502],
+                {
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var icon_56abe70f0497165d5193d5c71d226eee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_507c874b8f623e2de4db16520c1f907c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4899abac4262ff3698a28afe2c6a4a8 = $(`<div id="html_d4899abac4262ff3698a28afe2c6a4a8" style="width: 100.0%; height: 100.0%;">史泰登岛 Staten Island</div>`)[0];
+                popup_507c874b8f623e2de4db16520c1f907c.setContent(html_d4899abac4262ff3698a28afe2c6a4a8);
+            
+        
+
+        marker_7bf591bfd7e6f8ce37e7390ceafef581.bindPopup(popup_507c874b8f623e2de4db16520c1f907c)
+        ;
+
+        
+    
+    
+            marker_7bf591bfd7e6f8ce37e7390ceafef581.bindTooltip(
+                `<div>
+                     史泰登岛 Staten Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bf591bfd7e6f8ce37e7390ceafef581.setIcon(icon_56abe70f0497165d5193d5c71d226eee);
+            
+    
+            var polygon_68852abd49379ad7e822c68de290540f = L.polygon(
+                [[40.8007, -73.9512], [40.7831, -73.9712], [40.7489, -73.968], [40.7074, -74.0113], [40.7, -74.02], [40.715, -74.0134], [40.7589, -73.9851], [40.8007, -73.9512]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+        var popup_170267f2e0b8e1aa6e3051ba9240b57f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff76ba1a8baa03db111afe64b2ef90cf = $(`<div id="html_ff76ba1a8baa03db111afe64b2ef90cf" style="width: 100.0%; height: 100.0%;">曼哈顿 Manhattan</div>`)[0];
+                popup_170267f2e0b8e1aa6e3051ba9240b57f.setContent(html_ff76ba1a8baa03db111afe64b2ef90cf);
+            
+        
+
+        polygon_68852abd49379ad7e822c68de290540f.bindPopup(popup_170267f2e0b8e1aa6e3051ba9240b57f)
+        ;
+
+        
+    
+    
+            var polygon_3225145c487f1b073131f5b78c75e861 = L.polygon(
+                [[40.7361, -73.9906], [40.6782, -73.9442], [40.5795, -74.0], [40.6, -74.05], [40.7, -74.02], [40.7361, -73.9906]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+        var popup_3a6836e2b56f98623ee731934c26dfbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9d8abe4599760f0e28585760410ebfc = $(`<div id="html_a9d8abe4599760f0e28585760410ebfc" style="width: 100.0%; height: 100.0%;">布鲁克林 Brooklyn</div>`)[0];
+                popup_3a6836e2b56f98623ee731934c26dfbc.setContent(html_a9d8abe4599760f0e28585760410ebfc);
+            
+        
+
+        polygon_3225145c487f1b073131f5b78c75e861.bindPopup(popup_3a6836e2b56f98623ee731934c26dfbc)
+        ;
+
+        
+    
+    
+            var tile_layer_aca008c617507eae36614959ca4509c7 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e \u0026mdash; Map data \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aca008c617507eae36614959ca4509c7.addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var tile_layer_05a402071263781617b92b278869904a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_05a402071263781617b92b278869904a.addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+        
+    
+            var layer_control_6560061ba3786b54dcb59492b9e6f75d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5016a7eec0687628f78348d19c27e2b7,
+                    "Stamen Terrain" : tile_layer_aca008c617507eae36614959ca4509c7,
+                    "cartodbpositron" : tile_layer_05a402071263781617b92b278869904a,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_6560061ba3786b54dcb59492b9e6f75d = L.control.layers(
+                layer_control_6560061ba3786b54dcb59492b9e6f75d_layers.base_layers,
+                layer_control_6560061ba3786b54dcb59492b9e6f75d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_826671fa93b9858a6abc1b7a0f3c30a5);
+
+        
+</script>
+</html>
