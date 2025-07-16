@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纽约市地图 - New York City Map</title>
+    <style>
+        body {
+            font-family: 'Arial', '微软雅黑', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .map-card {
+            background: #fff;
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .map-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border-color: #c0392b;
+        }
+        .map-card h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        .map-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+        .btn.secondary {
+            background: #3498db;
+        }
+        .btn.secondary:hover {
+            background: #2980b9;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+        .info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+        .landmarks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .landmark {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #e74c3c;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗽 纽约市地图 - New York City Map 🏙️</h1>
+        
+        <div class="info">
+            <h3>🎯 欢迎使用纽约市交互式地图系统</h3>
+            <p>这里包含了纽约市的详细地图，展示了主要地标、景点和五个区域。您可以选择不同的查看方式来探索这座伟大的城市。</p>
+        </div>
+
+        <div class="map-grid">
+            <div class="map-card">
+                <div class="icon">🗺️</div>
+                <h3>交互式地图</h3>
+                <p>完全交互式的在线地图，支持缩放、拖拽、多图层切换，包含所有主要地标的详细信息。</p>
+                <a href="nyc_interactive_map.html" class="btn" target="_blank">🔍 打开交互式地图</a>
+            </div>
+
+            <div class="map-card">
+                <div class="icon">🖼️</div>
+                <h3>静态地图图片</h3>
+                <p>高分辨率的静态地图图片(PNG格式)，适合保存、打印或嵌入文档中使用。</p>
+                <a href="nyc_static_map.png" class="btn secondary" target="_blank">📷 查看PNG地图</a>
+            </div>
+
+            <div class="map-card">
+                <div class="icon">📄</div>
+                <h3>PDF地图文档</h3>
+                <p>矢量格式的PDF地图，保持高质量的同时文件更小，适合专业用途和打印。</p>
+                <a href="nyc_static_map.pdf" class="btn secondary" target="_blank">📋 下载PDF地图</a>
+            </div>
+
+            <div class="map-card">
+                <div class="icon">📖</div>
+                <h3>说明文档</h3>
+                <p>详细的使用说明和技术文档，了解地图的功能特点和使用方法。</p>
+                <a href="纽约市地图说明.md" class="btn secondary" target="_blank">📚 查看说明文档</a>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>🏛️ 包含的主要地标</h3>
+            <div class="landmarks">
+                <div class="landmark">🎪 时代广场 Times Square</div>
+                <div class="landmark">🌳 中央公园 Central Park</div>
+                <div class="landmark">🏢 帝国大厦 Empire State Building</div>
+                <div class="landmark">🗽 自由女神像 Statue of Liberty</div>
+                <div class="landmark">🌉 布鲁克林大桥 Brooklyn Bridge</div>
+                <div class="landmark">💰 华尔街 Wall Street</div>
+                <div class="landmark">🏛️ 联合国总部 UN Headquarters</div>
+                <div class="landmark">⚾ 洋基体育场 Yankee Stadium</div>
+                <div class="landmark">🎨 大都会艺术博物馆 Met Museum</div>
+                <div class="landmark">🕯️ 9/11纪念馆 9/11 Memorial</div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>🗺️ 纽约市五个区</h3>
+            <div class="landmarks">
+                <div class="landmark">🏙️ 曼哈顿 Manhattan</div>
+                <div class="landmark">🌊 布鲁克林 Brooklyn</div>
+                <div class="landmark">✈️ 皇后区 Queens</div>
+                <div class="landmark">⚾ 布朗克斯 Bronx</div>
+                <div class="landmark">🚢 史泰登岛 Staten Island</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💻 基于 Python + Folium + Matplotlib 生成</p>
+            <p>🗺️ 地图数据来源：OpenStreetMap</p>
+            <p>⏰ 生成时间：2025年1月</p>
+        </div>
+    </div>
+
+    <script>
+        // 添加一些交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.map-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
